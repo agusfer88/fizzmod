@@ -38,7 +38,7 @@ a.addEventListener("click",e=>{
     div.appendChild(btn1);
     btn1.innerText = "Aceptar";
     btn1.addEventListener("click",()=>{
-      //falta hacer que se redirija al <a/>
+      
       location.href = e.target.href
 
     });
