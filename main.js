@@ -18,6 +18,8 @@
 //a
 
 var a = document.querySelector('a');
+// opcion delegar evento sacar los event listener afuer y hacerlos reaccionar por propagacion
+
 a.addEventListener("click",e=>{
   e.preventDefault();
   //div
@@ -37,6 +39,8 @@ a.addEventListener("click",e=>{
     btn1.innerText = "Aceptar";
     btn1.addEventListener("click",()=>{
       //falta hacer que se redirija al <a/>
+      location.href = e.target.href
+
     });
 
   //button 2
