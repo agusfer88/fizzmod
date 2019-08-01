@@ -18,7 +18,8 @@
 //a
 
 var a = document.querySelector('a');
-a.addEventListener("click",()=>{
+a.addEventListener("click",e=>{
+  e.preventDefault();
   //div
     var div =  document.createElement("div");
     document.body.appendChild(div);
@@ -34,7 +35,9 @@ a.addEventListener("click",()=>{
     var btn1 =  document.createElement("button");
     div.appendChild(btn1);
     btn1.innerText = "Aceptar";
-    btn1.addEventListener("click",()=>{});
+    btn1.addEventListener("click",()=>{
+      //falta hacer que se redirija al <a/>
+    });
 
   //button 2
     var btn2 = btn1.cloneNode(true);
