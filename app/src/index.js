@@ -1,12 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+/*
+1 tiene que siempre estar la variable en scope
+2 un componende de react es una funcion
+3 todos los componene tes de React tiene que retornar algo: 
+    React.Component - string - DomNode
+4 Todos los componentes de React tiene que ir en mayuscula sino lo toma como una etiqueta y la compila asi
+5 los componentes para ejecutarlos van en JSX:
+function App(){
 
-ReactDOM.render(<App />, document.getElementById('root'));
+}
+*/
+//ES6
+import React from "react";
+import ReactDOM from "react-dom";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//CommonJS
+//const React = require("react")
+let App = () => "Hola mundo";
+
+ReactDOM.render(<App />, document.getElementById("root"));
