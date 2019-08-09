@@ -12,9 +12,15 @@ function App(){
 //ES6
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./ui/layout/App";
 
 //CommonJS
 //const React = require("react")
-let App = () => "Hola mundo";
+//let App = () => <p>"Hola mundo"</p>;
+
+/*function App() {
+  return <p>"Hola mundo"</p>;
+}
+*/
 
 ReactDOM.render(<App />, document.getElementById("root"));
