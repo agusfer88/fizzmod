@@ -13,6 +13,8 @@ function App(){
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./ui/layout/App";
+import { Provider } from "react-redux";
+import store from "./api/store";
 
 //CommonJS
 //const React = require("react")
@@ -23,4 +25,9 @@ import App from "./ui/layout/App";
 }
 */
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
